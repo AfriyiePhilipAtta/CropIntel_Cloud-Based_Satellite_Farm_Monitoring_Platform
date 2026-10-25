@@ -5,8 +5,6 @@ An AfriScan geospatial software project.
 
 This repository contains **selected original Python source files**, an Apache Airflow DAG snapshot, and actual reports generated for the *CropIntel Sene East Demo Farm*, a 5.0 ha maize demonstration field in Bono East, Ghana.
 
-The reports are examples of the software output, not field-validated diagnoses. Farm data are described as demonstration data. No customer records or authentication credentials are included.
-
 ![Field report](docs/sample-reports/overview.png)
 
 ## Example farm outputs
@@ -47,7 +45,7 @@ CropIntel was deployed on an **Oracle Cloud Infrastructure Ubuntu ARM64 virtual 
 
 The following screenshot shows the running **`cropintel-server`** instance in Oracle Cloud Infrastructure, in the **Germany Central (Frankfurt)** region.
 
-![CropIntel Oracle Cloud running instance](docs/oracle-cloud/cropintel-running-instance.png)
+![CropIntel Oracle Cloud running instance](docs/airflow/cropintel-running-instance.png)
 
 | Instance detail | Configuration shown |
 | --- | --- |
@@ -73,9 +71,9 @@ The screenshots show a **successful run on 25 October 2026**, completing in appr
 
 ## Interpretation and limitations
 
-CropIntel uses optical and radar observations along with weather information to help prioritize field inspection. NDVI reflects canopy greenness, NDMI is an optical moisture-related index, and NDRE is a red-edge vegetation index. None directly diagnoses nutrient deficiency, disease or required irrigation.
+CropIntel uses optical and radar observations, along with weather information, to help prioritize field inspections. NDVI reflects canopy greenness, NDMI is an optical moisture-related index, and NDRE is a red-edge vegetation index. None directly diagnoses nutrient deficiency, disease, or required irrigation.
 
-Satellite observation gaps, processing assumptions, geolocation errors and crop growth stage affect interpretation. The sample outputs are not presented as measured field-validation accuracy.
+Satellite observation gaps, processing assumptions, geolocation errors, and crop growth stage affect interpretation. The sample outputs are not presented as measured field-validation accuracy.
 
 ## Privacy and commercialization
 
