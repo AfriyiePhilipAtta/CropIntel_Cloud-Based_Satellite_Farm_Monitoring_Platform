@@ -20,6 +20,7 @@ The reports are examples of the software output, not field-validated diagnoses. 
 | Nutrition indicators | [View image](docs/sample-reports/nutrition.png) |
 | Water and climate | [View image](docs/sample-reports/water-and-climate.png) |
 
+The example reports were produced on **25 October 2026**. The latest optical image listed in the trend report was **19 October 2026**. A report date is not necessarily the satellite observation date.
 
 ## Selected Python files
 
@@ -41,6 +42,26 @@ These are selected files from the real CropIntel codebase, not invented demonstr
 ## Pipeline and cloud deployment
 
 CropIntel was deployed on an **Oracle Cloud Infrastructure Ubuntu ARM64 virtual machine** using **Docker Compose, Apache Airflow and PostgreSQL**. Tasks validate farm inputs, retrieve satellite and weather information, transform indicators, validate results and create field reports.
+
+### Oracle Cloud compute instance
+
+The following screenshot shows the running **`cropintel-server`** instance in Oracle Cloud Infrastructure, in the **Germany Central (Frankfurt)** region.
+
+![CropIntel Oracle Cloud running instance](docs/oracle-cloud/cropintel-running-instance.png)
+
+| Instance detail | Configuration shown |
+| --- | --- |
+| Instance name | `cropintel-server` |
+| State | Running |
+| Region | Germany Central (Frankfurt) |
+| Compute shape | `VM.Standard.A1.Flex` |
+| Allocated CPU | 2 OCPUs |
+| Allocated memory | 12 GB |
+| Availability domain | AD-2 |
+
+The screenshot confirms the compute instance was running when it was captured on **26 October 2026**. It does not, by itself, establish application uptime or the success of any individual processing run.
+
+### Airflow pipeline execution
 
 ![Successful Airflow graph](docs/airflow/successful-dag-run.png)
 
