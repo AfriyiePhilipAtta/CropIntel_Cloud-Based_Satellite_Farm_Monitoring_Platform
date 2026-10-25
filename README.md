@@ -1,0 +1,1 @@
+# CropIntel_Cloud-Based_Satellite_Farm_Monitoring_Platform
