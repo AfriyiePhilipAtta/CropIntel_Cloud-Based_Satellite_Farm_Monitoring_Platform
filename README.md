@@ -20,7 +20,6 @@ The reports are examples of the software output, not field-validated diagnoses. 
 | Nutrition indicators | [View image](docs/sample-reports/nutrition.png) |
 | Water and climate | [View image](docs/sample-reports/water-and-climate.png) |
 
-The example reports were produced on **25 October 2026**. The latest optical image listed in the trend report was **19 October 2026**. A report date is not necessarily the satellite observation date.
 
 ## Selected Python files
 
